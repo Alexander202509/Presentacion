@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+  }
+  
+  /* Encabezado */
+  .encabezado {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    max-height: 60px;
+  }
+  
+  .nombre-empresa {
+    font-size: 1.5rem;
+    color: #000000;
+  }
+  
+  /* Cuadro amarillo con opciones en columna */
+  .opciones {
+    background-color: #f0b918;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+  }
+  
+  .opcion {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .opcion:hover {
+    background-color: #fdf7e2;
+  }
+  
+  /* Pie de página */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #eee;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  /* Sección de correos debajo del footer */
+  .footer-correos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #eee;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .encabezado {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .footer,
+    .footer-correos {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-col {
+      width: 100%;
+    }
+  }
+  
